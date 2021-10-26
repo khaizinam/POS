@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(228, 226, 226);
+}
 /*========================= Header========================================= */
 
 * {
@@ -26,7 +29,9 @@
     justify-content: flex-end;
     width: 60%;
   }
-  
+  .focus{
+    background: #978c0e;
+  }
   nav .content-nav ul {
     display: flex;
   }
@@ -95,9 +100,7 @@
   
   }
   
-  .modal-body {
-    padding: 1rem;
-  }
+  
   
   .modal-footer {
     display: flex;
@@ -194,14 +197,23 @@
   }
   
   .products ul .main-product {
+    position: relative;
+
+    border-radius: 50px;
     margin-bottom: 60px;
     margin-right: 50px;
     display: block;
     float: left;
     width: 360px;
     height: 360px;
+    background-color: #fff;
+    overflow: hidden; 
+    transition: all 0.5s;
   }
-  
+  .img-product:hover  img{
+    transition: all 0.5s;
+    scale: 1.15;
+  }
   .products ul .no-margin {
     margin-right: 0;
   }
@@ -210,17 +222,31 @@
     width: 100%;
   }
   
+  .content-product{
+
+    position: absolute;
+    width: 360px;
+    height: 135px;
+    bottom: -80px;
+    background-color: #c9b7b7;
+    transition: all 0.5s;
+  }
+  .content-product:hover { 
+    bottom: -20px;
+    
+}
   .content-product .content-product-h3 {
-    padding: .5rem 0;
-    overflow: hidden;
+
+    padding: 5px 0;
+    overflow: hidden; 
     color: #222;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     max-height: 50px;
     min-height: 50px;
     text-align: center;
     line-height: 19px;
-    margin: 0 0 5px;
+    margin: 0 5px;
   }
   
   .content-product .content-product-deltals {
@@ -243,7 +269,7 @@
   
   .content-product .content-product-deltals .btn-cart {
     background: #f1df11;
-    border-radius: 5px;
+    border-radius: 10px; 
     color: #fff;
     font-weight: 500;
   }
@@ -287,7 +313,7 @@
   /* ========================FOOTER====================================== */
   /* footer */
 .footer-item {
-    padding: .5rem 15px;
+    padding: 15px;
     background: #f1df11;
     display: flex;
   
@@ -311,11 +337,11 @@
   
   .footer-item .social-footer li a {
     color: #000000;
-    font-size: 15px;
+    font-size: 30px;
   }
   
   .footer-item .social-footer li:last-child {
-    margin-left: .5rem;
+    margin-left: 15px;
   }
   /* cart */
 .cart-header {
@@ -413,3 +439,4 @@
     color: #333;
     font-size: 1.1em;
   }
+  

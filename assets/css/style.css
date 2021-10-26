@@ -1,7 +1,7 @@
 #Home::before{
     font-family: "Font Awesome 5 free";
     font-weight: 900;
-    color: rgb(46, 32, 107);
+    color: #43433e;
     font-size: 50px;
     content: "\f015";
 }
