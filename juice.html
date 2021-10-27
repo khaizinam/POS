@@ -13,38 +13,43 @@
 </head>
 <body>
     <div class="sys-wrapper">
-        <div id="header">
-            <div class="container justify-content-between">
-               <div class="header-logo">
-                <a id="Home" href="index.html"></a>
+        <div id="header" class="fixed">
+            <div class="container">
+               <div class="box logo-body">
+                 <a id="Home" href="index.html"></a>
                </div>
-               <div class="header-search">
+               <div class="box search-body">
                     <form action="" id="search">
                         <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
                         <button><i class="fas fa-search"></i></button>
-                    </form>
+                    </form>     
+               </div>
+               <div class="box login-body">
+                   <ul class="log-in-out d-flex">
+                       <li> <a  href=""><i class="fas fa-sign-in-alt"></i></a></li>
+                       <li> <a  href=""><i class="fas fa-sign-out-alt"></i></a></li>
+                       <li> <a href="cart.html"><i class="fa fa-shopping-basket" ></i> My Cart</a></li>
+                   </ul>
                </div>
             </div>
             <div class="container d-flex">
                 <nav>
                     <ul id="main-menu" class="d-flex">
                         <li><a href="Combo.html">Combo</a></li>
-                        <li><a  href="cake.html">Cake</a></li>
+                        <li><a href="cake.html">Cake</a></li>
                         <li><a href="Milk_Tea.html">Milk Tea</a></li>
                         <li><a href="fastfood.html">Fast Food</a></li>
-                        <li><a class="focus"  href="juice.html">Juice</a></li>
+                        <li><a class="focus" href="juice.html">Juice</a></li>
                     </ul>             
                 </nav>
-                <button type="button" id="cart">
-                    <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Your Cart</a>
-                </button>
             </div>
             
                                   
             
             
         </div>
-        <!-- End header -->
+        <div class="fix-pos">
+              <!-- End header -->
         <div id="Item-menu" class="container">
             <section class="wrapper">
                 <div class="products">
@@ -203,6 +208,8 @@
                 </ul>
             </div>
             <!-- End coppyright -->
+        </div>
+      
 
     </div>
         

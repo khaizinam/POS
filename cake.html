@@ -13,16 +13,23 @@
 </head>
 <body>
     <div class="sys-wrapper">
-        <div id="header">
-            <div class="container justify-content-between">
-               <div class="header-logo">
-                <a id="Home" href="index.html"></a>
+        <div id="header" class="fixed">
+            <div class="container">
+               <div class="box logo-body">
+                 <a id="Home" href="index.html"></a>
                </div>
-               <div class="header-search">
+               <div class="box search-body">
                     <form action="" id="search">
                         <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
                         <button><i class="fas fa-search"></i></button>
-                    </form>
+                    </form>     
+               </div>
+               <div class="box login-body">
+                   <ul class="log-in-out d-flex">
+                       <li> <a  href=""><i class="fas fa-sign-in-alt"></i></a></li>
+                       <li> <a  href=""><i class="fas fa-sign-out-alt"></i></a></li>
+                       <li> <a href="cart.html"><i class="fa fa-shopping-basket" ></i> My Cart</a></li>
+                   </ul>
                </div>
             </div>
             <div class="container d-flex">
@@ -35,174 +42,170 @@
                         <li><a href="juice.html">Juice</a></li>
                     </ul>             
                 </nav>
-                <button type="button" id="cart">
-                    <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Your Cart</a>
-                </button>
-            </div>
-            
-                                  
-            
-            
+            </div>  
         </div>
         <!-- End header -->
-        <div id="Item-menu" class="container">
-            <section class="wrapper">
-                <div class="products">
-                    <ul>
-                        <li class="main-product">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-Donut.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Donut</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
-                                    </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+        <div class="fix-pos">
+            <div id="Item-menu" class="container">
+                <section class="wrapper">
+                    <div class="products">
+                        <ul>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-Donut.jpg"
+                                    alt="">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="main-product">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-macaron.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Marcaron</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Donut</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                     </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="main-product">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-mochi-matcha.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Mochi Matcha</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-macaron.jpg"
+                                    alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Marcaron</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                     </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="main-product">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-pavlova.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Palova</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-mochi-matcha.jpg"
+                                    alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Mochi Matcha</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                     </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="main-product">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-tao.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Apple Cake</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-pavlova.jpg"
+                                    alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Palova</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                     </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="main-product no-margin">
-                            <div class="img-product">
-                                <img class="img-prd"
-                                src="assets/img/banh-tiramisu.jpg"
-                                alt="">
-                            </div>
-                            <div class="content-product">
-                                <h3 class="content-product-h3">Tiramisu</h3>
-                                <div class="content-product-deltals">
-                                    <div class="price">
-                                        <span class="money">78000đ</span>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-tao.jpg"
+                                    alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Apple Cake</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                     </div>
-                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
                                 </div>
+                            </li>
+                            <li class="main-product no-margin">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                    src="assets/img/banh-tiramisu.jpg"
+                                    alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Tiramisu</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">78000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>
+            <!-- End Item menu -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="box logo-footer">
+                            <div class="box-head">
                             </div>
-                        </li> 
+                            <div class="box-body">
+                                <a href="">
+                                    <img src="assets/img/Taiwan Milk Tea with Bubble.jpg" width="180px" alt="" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box about-us ">
+                            <div class="box-head ">
+                                <h3>About us</h3>
+                            </div>
+                            <div class="box-body">
+                                <p>This System was implemented by Group 45. Design by khaizinam. Hope you have a nice day!! :))</p>
+                            </div>
+                        </div>
+                        <div class="box follow-us">
+                            <div class="box-head">
+                                <h3>Follow us</h3>
+                            </div>
+                            <div class="box-body">
+                                <ul class="list-social d-flex">
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/khai.nguyenhuu.1804"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=5kEhtz_hKsY&t=120s"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://github.com/khaizinam/POS"><i class="fab fa-github"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End footer -->
+                <div id="wp-copyright" class="container justify-content-between">
+                    <p class="copyright">®Khaizinam Helionare Herp CO</p>
+                    <ul id="footer-menu" class="d-flex">
+                        <li><a href="">Bảo mật</a></li>
+                        <li><a href="">Quảng cáo</a></li>
+                        <li><a href="">Liên hệ</a></li>
                     </ul>
                 </div>
-            </section>
-            
+                <!-- End coppyright -->
         </div>
-        <!-- End Item menu -->
-            <div id="footer">
-                <div class="container">
-                    <div class="box logo-footer">
-                        <div class="box-head">
-                        </div>
-                        <div class="box-body">
-                            <a href="">
-                                <img src="assets/img/Taiwan Milk Tea with Bubble.jpg" width="180px" alt="" >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="box about-us ">
-                        <div class="box-head ">
-                            <h3>About us</h3>
-                        </div>
-                        <div class="box-body">
-                            <p>This System was implemented by Group 45. Design by khaizinam. Hope you have a nice day!! :))</p>
-                        </div>
-                    </div>
-                    <div class="box follow-us">
-                        <div class="box-head">
-                            <h3>Follow us</h3>
-                        </div>
-                        <div class="box-body">
-                            <ul class="list-social d-flex">
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/khai.nguyenhuu.1804"><i class="fab fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.youtube.com/watch?v=5kEhtz_hKsY&t=120s"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://github.com/khaizinam/POS"><i class="fab fa-github"></i></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End footer -->
-            <div id="wp-copyright" class="container justify-content-between">
-                <p class="copyright">®Khaizinam Helionare Herp CO</p>
-                <ul id="footer-menu" class="d-flex">
-                    <li><a href="">Bảo mật</a></li>
-                    <li><a href="">Quảng cáo</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                </ul>
-            </div>
-            <!-- End coppyright -->
+        
     </div>
        
 

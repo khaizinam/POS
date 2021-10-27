@@ -1,8 +1,14 @@
 body{
-  background-color: rgb(228, 226, 226);
+   background-color: rgb(228, 226, 226);
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.box.logo-body a{
+    text-decoration: none;
 }
 /*========================= Header========================================= */
-
 * {
   
     padding: 0;
@@ -18,10 +24,38 @@ body{
     margin: 0px auto;
     display: flex;
 }
-ul{
-    list-style: none;
-    padding: 0;
+/* ======================HEADER BUTTON========================== */
+#header .box.logo-body{
+  flex :280px;
+  padding-right: 15px;
 }
+#header .box.search-body{
+  flex :500px;
+  padding-right: 15px;
+}
+#header .box.login-body{
+  flex :280px;
+  padding-left: 100px;
+}
+ul.log-in-out li{
+  margin-left: 10px;
+  border-radius:10px ;
+  background: #d6c611;
+}
+ul.log-in-out  li a{
+  padding: 6px 11px;
+  color: #eee;
+  display: block;
+}
+ul.log-in-out  li:first-child{
+  margin-left: 0px;
+}
+ul.log-in-out  li:hover a
+{
+  color: #4db2ec;
+}
+/* ==================================CATEGORY============================== */
+
   /* header */
   #header {
     background: #f1df11;
@@ -29,6 +63,7 @@ ul{
     padding-bottom: 10px;
     margin-bottom: 35px;
 }
+
 form#search {
     position: relative;
 }
@@ -43,7 +78,7 @@ form#search button{
 }
 form#search input{
     background: #ffffff;
-    width: 248px;
+    width: 600px;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -69,7 +104,7 @@ ul#main-menu li a{
     width: 150px;
     margin: 0px 5px;
     color: #090909;
-    font-size: 20px;
+    font-size: 15px;
     background: #dfcd08;
    
 }
@@ -98,6 +133,18 @@ ul#main-menu .focus {
   #cart:hover {
     border-color: #fff;
   }
+  .fixed{
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    border-bottom: 4px solid #cbd440;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .fix-pos{
+    position:relative;
+    top: 180px;
+  } 
   /* ======================modal=================================== */
   /* modal */
 .modal {

@@ -5,6 +5,7 @@
     font-size: 50px;
     content: "\f015";
 }
+
 .justify-content-between {
     justify-content: space-between;
 }
