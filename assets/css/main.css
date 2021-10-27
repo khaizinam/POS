@@ -498,4 +498,7 @@ ul#footer-menu li:last-child a{
     color: #333;
     font-size: 1.1em;
   }
-  
+  .cart-body{
+    min-height: 1260px;
+    margin: 0 auto;
+  }
