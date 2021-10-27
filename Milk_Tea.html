@@ -12,36 +12,41 @@
     <title>MILK TEA</title>
 </head>
 <body>
-    <div id="wrapper">
+    <div class="sys-wrapper">
         <div id="header">
-            <nav>
-                <a id="Home" href=""></a>
-                <div class="content-nav">
-                    <ul>
-                        <li><a href="">Combo</a></li>
-                        <li><a href="">Cake</a></li>
-                        <li><a class="focus" href="">Milk Tea</a></li>
-                        <li><a  href="index.html">Fast Food</a></li>
-                        <li><a href="">Juice</a></li>
-                    </ul>
-                    <form>
-                        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <div class="container justify-content-between">
+               <div class="header-logo">
+                 <a  href=""><a id="Home" href=""></a></a>
+               </div>
+               <div class="header-search">
+                    <form action="" id="search">
+                        <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
+                        <button><i class="fas fa-search"></i></button>
                     </form>
-                </div>
-                <!-- The Modal -->
-                
+               </div>
+            </div>
+            <div class="container d-flex">
+                <nav>
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href="Combo.html">Combo</a></li>
+                        <li><a  href="cake.html">Cake</a></li>
+                        <li><a class="focus" href="Milk_Tea.html">Milk Tea</a></li>
+                        <li><a href="index.html">Fast Food</a></li>
+                        <li><a href="juice.html">Juice</a></li>
+                    </ul>             
+                </nav>
                 <button type="button" id="cart">
                     <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                     Your Cart
                 </button>
-            </nav>
+            </div>
+            
                                   
             
             
         </div>
         <!-- End header -->
-        <div id="Item-menu">
+        <div id="Item-menu" class="container">
             <section class="wrapper">
                 <div class="products">
                     <ul>
@@ -147,20 +152,61 @@
             
         </div>
         <!-- End Item menu -->
-        <footer>
-            <div class="footer-item">
-                <div class="social-footer">
-                    <li><a target="_blank" href="https://www.facebook.com/khai.nguyenhuu.1804">
-                        <i class="fab fa-facebook"></i>
-                        </a></li>
-                    <li><a target="_blank" href="https://github.com/khaizinam/POS">
-                        <i class="fab fa-github"></i>
-                    </a></li>
-    
+        <div id="footer">
+            <div class="container">
+                <div class="box logo-footer">
+                    <div class="box-head">
+                    </div>
+                    <div class="box-body">
+                        <a href="">
+                            <img src="assets/img/Taiwan Milk Tea with Bubble.jpg" width="180px" alt="" >
+                        </a>
+                    </div>
+                </div>
+                <div class="box about-us ">
+                    <div class="box-head ">
+                        <h3>About us</h3>
+                    </div>
+                    <div class="box-body">
+                        <p>This System was implemented by Group 45. Design by khaizinam. Hope you have a nice day!! :))</p>
+                    </div>
+                </div>
+                <div class="box follow-us">
+                    <div class="box-head">
+                        <h3>Follow us</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-social d-flex">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/khai.nguyenhuu.1804"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=5kEhtz_hKsY&t=120s"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/khaizinam/POS"><i class="fab fa-github"></i></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
         <!-- End footer -->
+        <div id="wp-copyright" class="container justify-content-between">
+            <p class="copyright">®Khaizinam Helionare Herp CO</p>
+            <ul id="footer-menu" class="d-flex">
+                <li><a href="">Bảo mật</a></li>
+                <li><a href="">Quảng cáo</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+        <!-- End coppyright -->
+        
     </div>
+        
+
 </body>
 </html>

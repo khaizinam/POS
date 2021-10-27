@@ -5,5 +5,16 @@
     font-size: 50px;
     content: "\f015";
 }
-
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-start {
+    justify-content: flex-start;
+}
+.d-flex {
+    display : flex;
+}
 
