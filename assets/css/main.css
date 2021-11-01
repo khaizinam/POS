@@ -434,6 +434,9 @@ h5.modal-title {
   margin: 0 auto;
   background-color: #eee;
 }
+img#rezero_1{
+  margin-top: 90px;
+}
 #cost-filter{
   display: inline-block;
   width: 100px;
