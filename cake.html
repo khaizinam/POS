@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">  
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <script src="assets/js/cart.js"></script>
+    <title>🍔POS: retaurant mini of my</title>
+</head>
+<body>
+    <div class="sys-wrapper">
+        
+        <div id="header" >
+            <div class="wr-header">
+                <div class="container">
+                    <div class="box logo-body">
+                      <a href="index.html"><img src="assets/img/logo_1.png" width="50px" alt=""> Home</a>
+                    </div>
+                    <div class="box search-body">
+                         <form action="" id="search">
+                             <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
+                             <button><i class="fas fa-search"></i></button>
+                         </form>     
+                    </div>
+                    <div class="box login-body">
+                        <ul class="log-in-out d-flex">
+                             <li> 
+                                <button id="btn-user"><img src="assets/img/rem.png" width="40px" alt=""></i> User</button>
+                                <div id="user-Dropdown" class="user-dropdown-content">
+                                 <a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                                 <a href="#l">User option</a>
+                                 <a href="signup.html">Sign up</a>
+                                 <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+                               </div>
+                             </li>
+                             <li> 
+                                <a href="cart.html" id="to-cart"><i class="fa fa-shopping-basket" ></i> My Cart</a>
+                             </li>
+                        </ul>
+                        <script src="assets/js/cart.js"></script>
+                    </div>
+                 </div>
+                 <div class="main-menu-1">
+                     <nav>
+                         <ul id="main-menu" class="d-flex">
+                             <li><a  href="index.html">All</a></li>
+                             <li><a href="Combo.html">Combo</a></li>
+                             <li><a href="cake.html">Cake</a></li>
+                             <li><a href="Milk_Tea.html">Milk Tea</a></li>
+                             <li><a href="fastfood.html">Fast Food</a></li>
+                             <li><a href="juice.html">Juice</a></li>
+                         </ul>             
+                     </nav>
+                 </div>
+            </div>          
+        </div>
+        <!-- End header -->
+            <div id="Item-menu" class="d-flex">
+                <div class="side-bar">
+                    <form action="">
+                        <span>Dine in/ Order :</span><br>
+                        <select name="dine" id="dine">
+                            <option value="0">Dine in</option>
+                            <option value="1">Order</option>
+                        </select><br>
+                        <span>Cost</span><br>
+                        <input type="checkbox" name="hobby" value="cost_1">
+                        <span>Under 100.000</span><br>
+                        <input type="checkbox" name="hobby" value="cost_2">
+                        <span>100.000 - 200.000</span><br>
+                        <p>Type distance cost :</p>
+                        <input  id="cost_start" value="0"><span>-</span>
+                        <input  id="cost_end" value="0"><br>
+                        <button type="button" id="cost-filter">Apply</button><br>
+                        <span >Sale</span><br>
+                        <input type="checkbox" name="hobby" value="sale">
+                        <span>50%</span><br>
+                    </form>
+                    <img src="assets/img/re_3.png" id="rezero_1"  width="260px" alt="">
+                </div>
+                <div class="wrapper">
+                        <div class="feature-thumb">
+                            <img src="assets/img/post_5.jpg" alt="">
+                        </div>
+                        <div class="products">
+                            <ul>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-Donut.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Donut</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">28000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-macaron.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Marcaron</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">26000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-mochi-matcha.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Mochi Matcha</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">21000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-pavlova.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Palova</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">34000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-tao.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Apple Cake</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">27000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product no-margin">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                        src="assets/img/banh-tiramisu.jpg"
+                                        alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Tiramisu</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">33000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="footer-thumb">
+                            <img src="assets/img/post_6.jpg" alt="">
+                        </div>
+                </div>
+                
+            </div>
+            <!-- End Item menu -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="box logo-footer">
+                            <div class="box-head">
+                            </div>
+                            <div class="box-body">
+                                <a href="">
+                                    <img src="assets/img/Taiwan Milk Tea with Bubble.jpg" width="180px" alt="" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box about-us ">
+                            <div class="box-head ">
+                                <h3>About us</h3>
+                            </div>
+                            <div class="box-body">
+                                <p>This System was implemented by Group 45. Design by khaizinam. Hope you have a nice day!! :))</p>
+                            </div>
+                        </div>
+                        <div class="box follow-us">
+                            <div class="box-head">
+                                <h3>Follow us</h3>
+                            </div>
+                            <div class="box-body">
+                                <ul class="list-social d-flex">
+                                    <li>
+                                        <a target="_blank" href=""><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=chY9p-XLHHk"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://github.com/khaizinam/POS"><i class="fab fa-github"></i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End footer -->
+                <div id="wp-copyright" class="container justify-content-between">
+                    <p class="copyright">®Khaizinam Helionare Herp CO</p>
+                    <ul id="footer-menu" class="d-flex">
+                        <li><a href="">Bảo mật</a></li>
+                        <li><a href="">Quảng cáo</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <!-- End coppyright -->
+        </div>
+</body>
+</html>
