@@ -2,7 +2,7 @@
     font-family: "Font Awesome 5 free";
     font-weight: 900;
     color: #43433e;
-    font-size: 50px;
+    font-size: 30px;
     content: "\f015";
 }
 
@@ -17,5 +17,8 @@
 }
 .d-flex {
     display : flex;
+}
+.font-bold{
+    font-weight: bold;
 }
 

@@ -25,17 +25,28 @@
                     </form>     
                </div>
                <div class="box login-body">
-                   <ul class="log-in-out d-flex">
-                       <li> <a  href=""><i class="fas fa-sign-in-alt"></i></a></li>
-                       <li> <a  href=""><i class="fas fa-sign-out-alt"></i></a></li>
-                       <li> <a href="cart.html"><i class="fa fa-shopping-basket" ></i> My Cart</a></li>
-                   </ul>
-               </div>
+                <ul class="log-in-out d-flex">
+                     <li> 
+                        <button id="btn-user"><i class="fas fa-user-ninja"></i></button>
+                        <div id="user-Dropdown" class="user-dropdown-content">
+                         <a href="login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                         <a href="#l">User option</a>
+                         <a href="signup.html">Sign up</a>
+                         <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+                       </div>
+                     </li>
+                     <li> 
+                        <a href="cart.html" id="to-cart"><i class="fa fa-shopping-basket" ></i> My Cart</a>
+                     </li>
+                </ul>
+                <script src="assets/js/cart.js"></script>
             </div>
-            <div class="container d-flex">
+            </div>
+            <div class="main-menu-1">
                 <nav>
                     <ul id="main-menu" class="d-flex">
-                        <li><a class="focus" href="Combo.html">Combo</a></li>
+                        <li><a href="index.html">All</a></li>
+                        <li><a class="focus" href="Combo.html">Combo</a></li>                
                         <li><a href="cake.html">Cake</a></li>
                         <li><a href="Milk_Tea.html">Milk Tea</a></li>
                         <li><a href="fastfood.html">Fast Food</a></li>
@@ -50,8 +61,32 @@
         </div>
         <div class="fix-pos">
              <!-- End header -->
-        <div id="Item-menu" class="container">
-            <section class="wrapper">
+        <div id="Item-menu" class="d-flex">
+            <div class="side-bar">
+                <form action="">
+                    <span>Dine in/ Order :</span><br>
+                    <select name="dine" id="dine">
+                        <option value="0">Dine in</option>
+                        <option value="1">Order</option>
+                    </select><br>
+                    <span>Cost</span><br>
+                    <input type="checkbox" name="hobby" value="cost_1">
+                    <span>Under 100.000</span><br>
+                    <input type="checkbox" name="hobby" value="cost_2">
+                    <span>100.000 - 200.000</span><br>
+                    <p>Type distance cost :</p>
+                    <input  id="cost_start" value="0"><span>-</span>
+                    <input  id="cost_end" value="0"><br>
+                    <button type="button" id="cost-filter">Apply</button><br>
+                    <span >Sale</span><br>
+                    <input type="checkbox" name="hobby" value="sale">
+                    <span>50%</span><br>
+                </form>
+            </div>
+            <div class="wrapper">
+                <div class="feature-thumb">
+                    <img src="assets/img/post_5.jpg" alt="">
+                </div>
                 <div class="products">
                     <ul>
                         <li class="main-product">
@@ -152,7 +187,10 @@
                         </li> 
                     </ul>
                 </div>
-            </section>
+                <div class="footer-thumb">
+                    <img src="assets/img/post_6.jpg" alt="">
+                </div>
+            </div>
             
         </div>
         <!-- End Item menu -->
@@ -182,13 +220,13 @@
                         <div class="box-body">
                             <ul class="list-social d-flex">
                                 <li>
-                                    <a target="_blank" href="https://www.facebook.com/khai.nguyenhuu.1804"><i class="fab fa-facebook"></i></a>
+                                    <a target="_blank" href=""><i class="fab fa-facebook"></i></a>
                                 </li>
                                 <li>
                                     <a target="_blank" href=""><i class="fab fa-instagram-square"></i></a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.youtube.com/watch?v=5kEhtz_hKsY&t=120s"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=chY9p-XLHHk"><i class="fab fa-youtube"></i></a>
                                 </li>
                                 <li>
                                     <a target="_blank" href="https://github.com/khaizinam/POS"><i class="fab fa-github"></i></i></a>
