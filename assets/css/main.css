@@ -6,6 +6,7 @@ body{
 }
 .sys-wrapper{
   background-color: #eee;
+  width: 100%;
 }
 * {
   
@@ -33,11 +34,19 @@ button:hover{
 }
 
 /*========================= Header========================================= */
-#header {
+#header { 
+  background: #f1df11;
+  width: 100%;
+}
+
+.wr-header{
   background: #f1df11;
   padding-top: 5px;
   padding-bottom: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1350px;
 }
 form#search {
   position: relative;
@@ -71,6 +80,8 @@ form#search::placeholder {
 /* =============HEADER BUTTON================= */
 .box.logo-body a{
   text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 #header .box.logo-body{
   flex :280px;
@@ -87,6 +98,10 @@ form#search::placeholder {
   flex :280px;
   padding-left: 100px;
 }
+ul.log-in-out {
+  margin-bottom: 0px;
+  /* background: #d6c611; */
+}
 ul.log-in-out li{
   margin-left: 10px;
   border-radius:10px ;
@@ -101,13 +116,14 @@ ul.log-in-out  li a{
 ul.log-in-out  li button {
   padding: 6px 11px;
   background-color: #f1df11;
+  outline: none;
   border: none;
   width: 100px;
 }
-ul.log-in-out  li button:hover,ul.log-in-out  li button:focus {
+/* ul.log-in-out  li button:hover,ul.log-in-out  li button:focus {
   background-color: #beaf09;
   border: none;
-}
+} */
 ul.log-in-out  li:first-child{
   margin-left: 0px;
 }
@@ -126,8 +142,11 @@ nav{
   width: 640px;
   margin:  auto;
 }
+ul#main-menu{
+  margin-bottom: 0px;
+}
 ul#main-menu li a{
-  text-align: center;
+    text-align: center;
     padding : 6px 20px;
     display: inline-block;
     border: 1px none;
@@ -413,6 +432,7 @@ h5.modal-title {
 #Item-menu{
   width: 1350px;
   margin: 0 auto;
+  background-color: #eee;
 }
 #cost-filter{
   display: inline-block;
@@ -491,7 +511,7 @@ h5.modal-title {
   .fixed{
     position: fixed;
     width: 100%;
-    height: 103px;
+    min-height: 103px;
     border-bottom: 4px solid #c7b200;
     z-index: 1;
   }
@@ -739,11 +759,13 @@ ul#footer-menu li:last-child a{
     padding: 4px 2px;
 }
 .user-dropdown-content{
-  display: none; 
+  display: none;  
+  color: black;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-width: 160px;
   overflow: auto;
+  border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .user-dropdown-content a {
@@ -754,7 +776,6 @@ ul#footer-menu li:last-child a{
 }
 .user-dropdown-content a:hover {
   background-color: #f1f1f1;
-  color: black;
 }
 .show{
   display:block;
